@@ -34,6 +34,11 @@ export const  PROJECTILES ={
         name:"radtorp",
         path:"/pew/radtorp.png",
         speed:550
+    },
+    starblaster:{
+        name:"starblaster",
+        path:"/pew/starblaster.png",
+        speed:550
     }
 }
 
@@ -44,62 +49,67 @@ export const SHIPS=  [
         name:"thunderhead",
         path:"/ships/thunderhead.png",
         scale:0.25,
-        speed:250,
-        projectile:PROJECTILES.scud
+        speed:360,
+        projectile:PROJECTILES.scud,
+        hp:10,
     },
     {
         name:"abomination",
         path:"/ships/abomination.png",
         scale:0.125,
         speed:220,
-        projectile:PROJECTILES.seekerplasma
+        projectile:PROJECTILES.starblaster,
+        hp:40,
+
     },
     {
         name:"anaconda",
         path:"/ships/anaconda.png",
         scale:0.5,
         speed:300,
-        projectile:PROJECTILES.greenlaser
+        projectile:PROJECTILES.greenlaser,
+        hp:25,
     },
     {
         name:"arrow",
         path:"/ships/arrow.png",
         scale:0.5,
-        speed:300,
-        projectile:PROJECTILES.ion
-    },
+        speed:350,
+        projectile:PROJECTILES.blueblaster,
+        hp:20,
+
+    },  
     {
-        name:"anaconda",
-        path:"/ships/anaconda.png",
-        scale:0.5,
-        speed:300,
-        projectile:PROJECTILES.greenlaser
-    },    {
         name:"anacondayellow",
         path:"/ships/anacondayellow.png",
         scale:0.125,
         speed:300,
-        projectile:PROJECTILES.bullet
+        projectile:PROJECTILES.bullet,
+        hp:25
     },
     {
         name:"anacondablack",
         path:"/ships/anacondablack.png",
         scale:0.125,
         speed:300,
-        projectile:PROJECTILES.bullet
+        projectile:PROJECTILES.bullet,
+        hp:10,
+
     },
     {
         name:"anacondagreen",
         path:"/ships/anacondagreen.png",
         scale:0.125,
         speed:300,
-        projectile:PROJECTILES.blueblaster
+        projectile:PROJECTILES.blueblaster,
+        hp:10,
     },
     {
         name:"anacondairish",
         path:"/ships/anacondairish.png",
         scale:0.125,
         speed:300,
-        projectile:PROJECTILES.radtorp
+        projectile:PROJECTILES.radtorp,
+        hp:10,
     },
 ];
