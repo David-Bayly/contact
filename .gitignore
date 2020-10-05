@@ -1,2 +1,4 @@
 node_modules
 public/js/phaser.js
+server/flask_session
+server/__pycache__/
